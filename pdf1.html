@@ -1,158 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mishra And Company Links</title>
-    <link rel="icon" type="image/png" href="Mishralogo2.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mishra And Company Links</title>
+  <link rel="icon" type="image/png" href="Mishralogo2.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: #faf6f2;
-            color: #333;
-            padding: 20px;
-        }
-        .container {
-            width: 100%;
-            max-width: 400px;
-            background: white;
-            padding: 20px;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .profile img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .profile p {
-            font-size: 14px;
-            color: #777;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .link {
-            display: flex;
-            flex-direction: column;
-            text-decoration: none;
-            background: #fdeedc;
-            color: #333;
-            padding: 20px;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-             
-            transition: 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            text-align: center;
-            width: 100%;
-        }
-        .link:hover {
-            background: #fbd3a8;
-        }
-        .link img {
-            width: 100%;
-            max-width: 300px;
-             
-        }
-        .link span {
-            flex-grow: 1;
-            flex-direction: column;
-            text-align: center;
-             
-        }
-        /* Embed Container for 9:16 without scrolling */
-        .embed-container {
-            width: 100%;
-            height: 600px; /* Fixed 9:16 aspect ratio for max-width 400px */
-            overflow: hidden;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .embed-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 10px;
-        }
-        .block {
-    display: block;
-    margin: 5px 0;
-    
-}
-        .pdf-wrapper {
-    width: 100%;
-    max-width: 100%;
-    height: 75vh;
-    margin: 20px 0;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #faf6f2;
+      color: #333;
+      padding: 20px;
+    }
 
-.pdf-wrapper iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+    .container {
+      width: 100%;
+      max-width: 400px;
+      background: white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
 
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
 
-    </style>
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .profile p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .link {
+      text-decoration: none;
+      background: #fdeedc;
+      color: #333;
+      padding: 20px;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .link:hover {
+      background: #fbd3a8;
+    }
+
+    .pdf-embed {
+      width: 100%;
+      height: 70vh; /* Adjusts dynamically on mobile */
+      border-radius: 15px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .pdf-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 15px;
+    }
+
+    @media (max-width: 480px) {
+      .pdf-embed {
+        height: 60vh; /* Smaller height for smaller screens */
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <img src="Mishralogo2.png" alt="Profile">
-            <p>Mishra And Company Sambalpur</p>
-        </div>
-        <!-- <div class="embed-container">
-            <iframe src="https://www.instagram.com/reel/DGqhb06SLjU/embed" frameborder="0" allowfullscreen></iframe>
-        </div> -->
-        
-        <br><br>
-
-         <!-- PDF Viewer (outside embed-container and .link) -->
-<div class="pdf-wrapper">
-    <iframe src="PVTDCMASTERRANGECATALOGUE.pdf#toolbar=0&zoom=100" title="Wifi Info PDF"></iframe>
-</div>
-        <div class="links">
-         
-            <div class="link embed-container pdf-embed">
-              <iframe src="PVTDCMASTERRANGECATALOGUE.pdf#toolbar=0&view=FitH" title="Wifi Info PDF"></iframe>
-          </div>
-           
-
-
-
-        </div>
+  <div class="container">
+    <div class="profile">
+      <img src="Mishralogo2.png" alt="Profile" />
+      <p>Mishra And Company Sambalpur</p>
     </div>
+
+    <div class="links">
+      <div class="pdf-embed">
+        <iframe src="PVTDCMASTERRANGECATALOGUE.pdf#toolbar=0&view=FitH" title="PDF View"></iframe>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
